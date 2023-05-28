@@ -18,7 +18,7 @@ export default function Form() {
     }
     const handlesubmit=async(e)=>{
         e.preventDefault();
-       const response=await fetch('http://localhost:8080/demo',{
+       const response=await fetch('http://34.131.136.80/demo',{
         statusCode: 200,
             method:'POST',
             body:JSON.stringify(form),
@@ -33,7 +33,7 @@ export default function Form() {
         console.log(data);
     }
     const getuser=async()=>{
-        const response=await fetch('http://localhost:8080/demo',{
+        const response=await fetch('http://34.131.136.80/demo',{
             method:'GET',
             statusCode: 200,
             headers :{'Content-Type':'application/json',
